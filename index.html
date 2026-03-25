@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nua Skin & Wellness - Centro de Estética y Belleza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-nua">NUA</span>
+                <span class="logo-skin">SKIN & WELLNESS</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tratamientos">Tratamientos</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#agendar">Agendar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Especialistas en Armonización y Estética Facial</h1>
+            <p class="hero-subtitle">Belleza natural, resultados extraordinarios</p>
+            <div class="hero-buttons">
+                <a href="#agendar" class="btn-primary">Agendar Cita</a>
+                <a href="#tratamientos" class="btn-secondary">Ver Tratamientos</a>
+            </div>
+        </div>
+        <div class="hero-decoration"></div>
+    </section>
+
+    <!-- Tratamientos -->
+    <section id="tratamientos" class="tratamientos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Tratamientos</h2>
+            <div class="tratamientos-grid">
+                
+                <!-- Plasma Rico en Plaquetas -->
+                <div class="tratamiento-card">
+                    <div class="card-icon"><i class="fas fa-syringe"></i></div>
+                    <h3>Plasma Rico en Plaquetas</h3>
+                    <p>Tratamiento regenerativo que utiliza tus propias plaquetas para estimular la producción de colágeno y rejuvenecer la piel naturalmente.</p>
+                </div>
+
+                <!-- Ácido Hialurónico -->
+                <div class="tratamiento-card featured">
+                    <div class="card-badge">Más Popular</div>
+                    <div class="card-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Ácido Hialurónico</h3>
+                    <div class="sub-tratamientos">
+                        <span>Rinomodelación</span>
+                        <span>Aumento de mentón</span>
+                        <span>Relleno y perfilado de labios</span>
+                        <span>Perfilado mandibular</span>
+                        <span>Full Lift</span>
+                        <span>Relleno de ojeras</span>
+                        <span>Relleno de surcos nasogenianos</span>
+                        <span>Hidralips</span>
+                    </div>
+                </div>
+
+                <!-- Toxina Botulínica -->
+                <div class="tratamiento-card">
+                    <div class="card-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Toxina Botulínica 3 Zonas</h3>
+                    <p>Tratamiento para suavizar líneas de expresión en frente, entrecejo y patas de gallo. Resultados naturales y rejuvenecedores.</p>
+                </div>
+
+                <!-- Skin Booster -->
+                <div class="tratamiento-card">
+                    <div class="card-icon"><i class="fas fa-tint"></i></div>
+                    <h3>Skin Booster</h3>
+                    <p>Hidratación profunda que mejora la calidad de la piel desde el interior, devolviendo luminosidad y elasticidad.</p>
+                </div>
+
+                <!-- Pink Glow -->
+                <div class="tratamiento-card">
+                    <div class="card-icon"><i class="fas fa-star"></i></div>
+                    <h3>Pink Glow</h3>
+                    <p>Tratamiento exclusivo para iluminar y unificar el tono de la piel, logrando un efecto glow radiante y saludable.</p>
+                </div>
+
+                <!-- Inbioamber -->
+                <div class="tratamiento-card">
+                    <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Inbioamber</h3>
+                    <p>Tratamiento bioestimulador de última generación para rejuvenecimiento facial con resultados progresivos y duraderos.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados -->
+    <section id="resultados" class="resultados">
+        <div class="container">
+            <h2 class="section-title">Resultados Reales</h2>
+            <p class="section-subtitle">Transformaciones que hablan por sí solas</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal(0)">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400&h=400&fit=crop" alt="Resultado 1">
+                    <div class="gallery-overlay">
+                        <span>Ver antes/después</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(1)">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=400&fit=crop" alt="Resultado 2">
+                    <div class="gallery-overlay">
+                        <span>Ver antes/después</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(2)">
+                    <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?w=400&h=400&fit=crop" alt="Resultado 3">
+                    <div class="gallery-overlay">
+                        <span>Ver antes/después</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(3)">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop" alt="Resultado 4">
+                    <div class="gallery-overlay">
+                        <span>Ver antes/después</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(4)">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop" alt="Resultado 5">
+                    <div class="gallery-overlay">
+                        <span>Ver antes/después</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(5)">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Resultado 6">
+                    <div class="gallery-overlay">
+                        <span>Ver antes/después</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Resultado">
+            <div class="modal-caption">
+                <h3>Transformación Nua Skin</h3>
+                <p>Resultados naturales y armónicos</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agendar -->
+    <section id="agendar" class="agendar">
+        <div class="container">
+            <div class="agendar-content">
+                <div class="agendar-info">
+                    <h2 class="section-title">Agenda tu Cita</h2>
+                    <p>Reserva tu evaluación gratuita y comienza tu transformación hoy mismo.</p>
+                    
+                    <div class="contact-info-agendar">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+56 9 7796 52XX</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nuaskinchile@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Martín Lutero, Espacio M 2140, Temuco</span>
+                        </div>
+                    </div>
+
+                    <div class="horarios">
+                        <h4>Horarios de Atención</h4>
+                        <p>Lunes a Viernes: 10:00 - 19:00</p>
+                        <p>Sábados: 10:00 - 14:00</p>
+                    </div>
+                </div>
+
+                <div class="agendar-form-container">
+                    <form class="agendar-form" id="agendarForm">
+                        <h3>Reserva Aquí</h3>
+                        <div class="form-group">
+                            <input type="text" id="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefono" placeholder="Teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="tratamiento" required>
+                                <option value="">Selecciona un tratamiento</option>
+                                <option value="plasma">Plasma Rico en Plaquetas</option>
+                                <option value="acido">Ácido Hialurónico</option>
+                                <option value="toxina">Toxina Botulínica</option>
+                                <option value="skinbooster">Skin Booster</option>
+                                <option value="pinkglow">Pink Glow</option>
+                                <option value="inbioamber">Inbioamber</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="fecha" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" placeholder="Mensaje adicional (opcional)" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Solicitar Cita</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón de Pago -->
+    <section class="payment-section">
+        <div class="container">
+            <div class="payment-box">
+                <div class="payment-info">
+                    <h3>¿Listo para tu tratamiento?</h3>
+                    <p>Realiza el pago de tu cita o tratamiento de forma segura</p>
+                </div>
+                <button class="btn-payment" onclick="openPaymentModal()">
+                    <i class="fas fa-credit-card"></i>
+                    Pagar Ahora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Pago -->
+    <div id="paymentModal" class="modal payment-modal">
+        <div class="modal-payment-content">
+            <span class="close-modal" onclick="closePaymentModal()">&times;</span>
+            <h3>Pago Seguro</h3>
+            <p>Selecciona tu método de pago preferido</p>
+            
+            <div class="payment-methods">
+                <button class="payment-method-btn" onclick="processPayment('webpay')">
+                    <i class="fas fa-university"></i>
+                    WebPay / Transferencia
+                </button>
+                <button class="payment-method-btn" onclick="processPayment('mercadopago')">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    MercadoPago
+                </button>
+                <button class="payment-method-btn" onclick="processPayment('paypal')">
+                    <i class="fab fa-paypal"></i>
+                    PayPal
+                </button>
+            </div>
+            
+            <div class="payment-note">
+                <p>🔒 Pago 100% seguro y encriptado</p>
+                <p>Contacto directo: +56 9 7796 52XX</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto y Mapa -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Encuéntranos</h2>
+            
+            <div class="contacto-grid">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.741726731!2d-72.6297!3d-38.7359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQ0JzA5LjIiUyA3MsKwMzcnNDYuOSJX!5e0!3m2!1ses!2scl!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 15px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <div class="contacto-info-detalle">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Dirección</h4>
+                        <p>Av. Martín Lutero<br>Espacio M 2140<br>Temuco, Chile</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Teléfono</h4>
+                        <p>+56 9 7796 52XX</p>
+                        <small>WhatsApp disponible</small>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Correo</h4>
+                        <p>nuaskinchile@gmail.com</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-nua">NUA</span>
+                    <span class="logo-skin">SKIN & WELLNESS</span>
+                </div>
+                <p>Especialistas en armonización y estética facial</p>
+                <p class="copyright">&copy; 2026 Nua Skin & Wellness. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
